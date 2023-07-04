@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: teal;
+        color: #fff;
+        /* width: 100vw;
+        height: 100vh; */
+    }
+    .container{
+       margin: auto;
+       width: 50%;
+       padding: 16px;
+       background-color: white;
+       color: black;
+       border-radius: 10px;
+       box-shadow: 20px 20px 0px rgba(0,0,0,0.7);
+    }
+    /* form{
+        margin: 100px 600px;
+        padding: 1.2rem;
+        font-size: 1.4rem;
+        max-width: 940px;
+        border-radius: 10px;
+        flex-direction: column;
+    } */
+    input[type='text'],
+    input[type='email'],
+    input[type='number'],
+    input[type='password'],
+    input[type='date'],
+    input[type='date']{
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+        display: inline-block;
+        background: whitesmoke;
+        margin: 4px 0 6px 0;
+        width: 100%;
+    }
+    button{
+        background-color: teal;
+        color: white;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin: auto;
+        opacity: 0.8;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-radius: 1rem;
+    }
+        button:hover{
+        background-color: #6df5fa;
+        color: black;
+        font-size: 1.7rem;
+        opacity: 1;
+    }
+    label{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="LandingPagePWPPT.html" name="myForm" onsubmit="return(Validate());">
+        <label for="">Name: </label>
+        <input type="text" placeholder="Name"><br><br>
+
+        <label for="">Email Id: </label>
+        <input type="email" name="EMail" id="text" placeholder="xyz123@gmail.com"><br><br>
+
+        <label for="">Phone Number: </label>
+        <input type="number"><br><br>
+
+        <label for="">Password:  </label>
+        <input type="password" name="Password"><br><br>
+
+        <label for="">Age:  </label>
+        <input type="number"><br><br>
+
+        <label for="gender">Gender: </label>
+        <!-- Male<input type="radio"> Female<input type="radio"><br><br> -->
+        <input type="radio" value="m" name="gender"> Male
+        <input type="radio" value="f" name="gender"> Female
+        <input type="radio" value="o" name="gender"> Others <br><br>
+
+        <label for="">Date:  </label>
+        <input type="date"><br><br>
+
+        <label for="">Color Picker:  </label>
+        <input type="color"><br><br>
+    
+        <button onclick="validate()" type="submit">Submit</button>
+    </form>
+</div>
+
+    <script>
+        // function validate() {
+        //     var mail = document.getElementById("text").value;
+
+        //     var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+
+        //     if(regx.text(mail)){
+        //         alert("You have Provided a valid EMail ID")
+        //         return true
+        //     }
+        //     else {
+        //         alert("Sorry Incorrect Email ID")
+        //         return false;
+        //     }
+        // }
+
+        function Validate(){
+        if(document.myForm.EMail.value == "") {
+            alert("Please provide your Email ID")
+            document.myForm.EMail.focus()
+            return false
+        }else if(document.myForm.Password.value == "") {
+            alert("Please provide your Password")
+            document.myForm.Password.focus()
+            return false
+        }
+        else {
+            return true
+        }
+       }
+    </script>
+</body>
+</html>

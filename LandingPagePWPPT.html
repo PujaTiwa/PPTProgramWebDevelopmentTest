@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        color: aliceblue;
+    }
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2rem;
+    }
+
+    button.btn-primary{
+        padding: 12px;
+        border: 1px solid #222;
+        border-radius: 2rem;
+        background-color: #ec830b;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    button:hover{
+        box-shadow: 0px 8px 5px 10px #0e87ce;
+        border: none;
+        background-color: blueviolet;
+        font-size: 20px;
+    }
+    .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 15px;
+        margin-top: 0%;
+        width: 100%;
+    }
+    li, a {
+        list-style: none;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        margin-right: 50px;
+        margin-top: 0%;
+        font-size: 18px;
+    }
+    .right-top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .main a:hover{
+    background: #f3c5cc;
+    }
+    
+    .left-mid {
+        /* width: 80%;
+        max-width: 60rem; */
+        max-width: 600px;
+        display: block;
+        flex-direction: column;
+        line-height: 1;
+        margin: 10px auto;
+        padding: 10px;
+        margin-right: 100px;
+    }
+    .left-mid p{
+        margin-bottom: 1rem;
+        width: 80%;
+        max-width: 60rem;
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+    .left-mid h1{
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .img img{
+        height: 70vh;
+        width: 100%;
+    }
+
+    footer{
+       display: flex; 
+       justify-content: space-around;
+       align-items: center;
+       margin-top: 3rem;
+       background-color: #1a1919;
+       color: white;
+       position: relative;
+       padding: 1rem;
+    }
+    .ft p{
+        font-size: 1.2rem;
+        max-width: 850px;
+    }
+    .close{
+        position: absolute;
+        /* top: 5px; */
+        /* right: 200px;   */
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    .btn{
+        background-color: transparent;
+        border: 1px solid white;
+        font-size: 18px;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+    }
+    .button{
+        background-color: transparent;
+        border: 1px solid white;
+        font-size: 18px;
+        padding: 10px;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+    
+</style>
+<body>
+   <section class="header">
+    <div class="left-top">
+    <nav class="navbar">
+        <ul class="main">
+            <li><a href="">Products</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Inspiration</a></li>
+            <li><a href="">Pricing</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="right-top">
+    <i class="fa fa-search"></i>
+    <button class="button">Log In</button>
+    <button class="btn-primary">Sign UP</button>
+</div>
+   </section>
+
+   <section class="main-portion">
+    <div class="left-mid">
+        <p>LANDING PAGE CREATOR</p>
+        <h1>Create must click landing pages</h1>
+        <p>With Mailchimp's landing page builder, it takes just a few minutes to design beautiful landing pages that make visitors want to join your audience or buy your stuff.</p>
+        <button class="btn-primary">Start Building</button>
+    </div>
+    <div class="img">
+        <img src="https://www.zdnet.com/a/img/resize/76b5fba6c8783b79e8c2b2976af70fdd0b12ffd2/2023/03/01/d1762712-8441-4457-900a-4bc8edf5521c/samsung-galaxy-book-3-ultra-hero.jpg?auto=webp&fit=crop&height=900&width=1200" alt="">
+    </div>
+   </section>
+
+   <footer>
+    <div class="ft">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, illo.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora aperiam ex, eos soluta molestiae!</p>
+    </div>
+    <div>
+        <button class="btn">Costomize</button>
+        <span class="close">&times;</span>
+    </div>
+   </footer>
+</body>
+</html>
